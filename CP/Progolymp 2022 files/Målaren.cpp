@@ -13,7 +13,6 @@ using namespace std;
 int main()
 {
     faster
-    freopen("input.txt", "r", stdin);
     //cout << fixed << setprecision(0);
 
     int n; cin >> n;
