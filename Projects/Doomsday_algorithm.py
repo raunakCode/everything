@@ -66,7 +66,5 @@ while (1):
     doomsDays[2] = 28
     print("Type any key to continue or 'stop' to stop")
     query = input()
-    if (query == "next"):
-        continue
-    elif (query == "stop"):
+    if (query == "stop"):
         break
