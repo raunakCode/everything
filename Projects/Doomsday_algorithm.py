@@ -29,7 +29,7 @@ while (1):
             if (year % 4 == 0):
                 day = randint(1,29)
             else:
-                day = randint(1,28) % 28 + 1;
+                day = randint(1,28)
         else:
             day = randint(1,30)
 
