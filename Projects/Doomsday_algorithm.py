@@ -1,8 +1,6 @@
-import math
 from random import randint
 import time
 
-s = " "
 months = ["Poop", "Jan", "Feb", "March", "April", "May", "June", "July", "August", "Sep","Oct", "Nov", "Dec"]
 thirty1 = ["Jan", "March", "May", "July", "August", "Oct", "Dec"]
 centuryDay = [2, 7, 5, 3]
@@ -16,20 +14,17 @@ day = 0
 
 times = []
 
-while (s != "exit"):
+while (1):
     year = randint(1700,2050)
     if (year % 4 == 0):
         doomsDays[1] = 4
         doomsDays[2] = 29
     monthNo = randint(1,12)
     month = months[monthNo]
-    found = False
-    for i in range(7):
-        if (month == thirty1[i]):
-            found = True
-            day = randint(1,31)
-            break
-    if (found == False):
+    
+    if month in thirty1:
+        day = randint(1,31)
+    else:
         if (month == "Feb"):
             if (year % 4 == 0):
                 day = randint(1,29)
